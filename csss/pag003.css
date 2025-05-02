@@ -36,6 +36,22 @@ body
     list-style-type: none;
     margin: 0 18px;
     padding: 0;
+    animation-name: slideup;
+    animation-duration: 1s;
+}
+
+@keyframes slideup
+{
+    from{
+        margin: 0 30px;
+        opacity: 50%;
+         transform: scale(0.0);
+    }
+    to{
+        margin: 0 18px;
+        opacity: 100%;
+        transform: scale(1.0);
+    }
 }
 
 .pri
@@ -54,6 +70,20 @@ body
     display: flex;
     justify-content: center;
     align-content: center;
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+@keyframes slidein
+{
+    from{
+        opacity: 0%;
+        margin-left: 80px;
+    }
+    to{
+        opacity: 100%;
+        margin-left: 0px;
+    }
 }
 
 .text h1
@@ -70,10 +100,24 @@ body
     width: 400px;
     border: 3px solid #182f49;
     border-radius: 10px;
+    animation-name: slideout;
+    animation-duration: 1s;
+}
+
+@keyframes slideout
+{
+    from{
+        opacity: 0%;
+        margin-right: 80px;
+    }
+    to{
+        opacity: 100%;
+        margin-right: 0px;
+    }
 }
 
 /**celular**/
-@media (min-width: 320px) and (max-width: 425px)
+@media (min-width: 320px) and (max-width: 450px)
 {
     .pri{
         display: flex;
@@ -101,6 +145,9 @@ body
     padding: 20px;
     border-radius: 20px;
     margin: 0 30px;
+    animation: up 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .historia h1
@@ -111,6 +158,9 @@ body
     -webkit-text-stroke: 0.5px;
     -webkit-text-stroke-color: black;
     font-family: "Cal Sans", sans-serif;
+    animation: up 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 .historia p
@@ -118,10 +168,25 @@ body
     font-size: 25px;
     line-height: 50px;
     font-family: "Raleway", sans-serif;
+    animation: up 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+@keyframes up 
+{
+    from{
+        opacity: 25%;
+        transform: scale(0.0);
+    }
+    to{
+        opacity: 100%;
+        transform: scale(1.0);
+    }
 }
 
 /*celular*/
-@media (min-width: 320px) and (max-width: 425px)
+@media (min-width: 320px) and (max-width: 450px)
 {
     .historia{
         margin-top: 30px;
@@ -146,6 +211,9 @@ body
     margin: 0 400px;
     border-radius: 3px;
     box-shadow: 6px 8px 10px #272c4e;
+    animation: slid 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
 }
 
 .tempo h1
@@ -158,6 +226,20 @@ body
     font-size: 19px;
     font-family: "Cal Sans", sans-serif;
     margin-top: -20px;
+}
+
+@keyframes slid
+{
+    from{
+        opacity: 0;
+        transform: scale(1.5);
+        clip-path: inset(45% 20% 45% 20%);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.0);
+        clip-path: inset(0% 0% 0% 0%);
+    }
 }
 
 .Utilidades
@@ -211,7 +293,7 @@ button:hover
 }
 
 /*celular dnv*/
-@media (min-width: 320px) and (max-width: 425px)
+@media (min-width: 320px) and (max-width: 450px)
 {
     .tempo{
         margin: 0 30px;
