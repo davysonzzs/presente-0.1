@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15/05</title>
+    <link rel="stylesheet" href="csss/utilidades.css">
+    <script>
+        function toggleParagrafo() {
+      var paragrafo = document.getElementById("meuParagrafo");
+      if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+      } else {
+        paragrafo.style.display = "none";
+      }
+    }
+
+    function p() {
+      var paragrafo = document.getElementById("meuParagraf");
+      if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+      } else {
+        paragrafo.style.display = "none";
+      }
+    }
+
+    function e() {
+      var paragrafo = document.getElementById("meuParagra");
+      if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+      } else {
+        paragrafo.style.display = "none";
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="utilidades.html" target="_blank" rel="noopener noreferrer">Utilidades</a></li>
+                    <li><a href="fotinhas.html" target="_blank" rel="noopener noreferrer">Fotinhas</a></li>
+                    <li><a href="pag003.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="info">
+        <h1>para que serve essa aba?</h1>
+        <p>eu criei essa aba, com a função de "apoio", quando estiver triste ou algo do tipo <br>
+        aq vai ter alguma mensagem pra você, acho bem dificil tu lembrar de voltar aq ne,<br>
+        mas tbm vai algumas mensagens que eu mrm fiz, acho que deu pra enteder, <br>
+        enfim, aproveite :)</p>
+    </div>
+    <h2 id="o">Emoções</h2>
+    <div class="lp">
+        <div id="raiva">
+            <button onclick="toggleParagrafo()">raiva</button>
+            <p id="meuParagrafo">kkkkkkk</p>
+        </div>
+        <div id="triste">
+            <button onclick="p()">triste</button>
+            <p id="meuParagraf">kkkkkkk</p>
+        </div>
+        <div id="feliz">
+            <button onclick="e()">feliz</button>
+            <p id="meuParagra">kkkkkkk</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2 id="o">Problemas</h2>
+    <div class="ls">
+        <div id="fam">
+            <h3>familiar</h3>
+            <img src="" alt="1m">
+        </div>
+        <div id="rela">
+            <h3>relacionamento</h3>
+            <img src="" alt="2m">
+        </div>
+    </div>
+</body>
+</html>
