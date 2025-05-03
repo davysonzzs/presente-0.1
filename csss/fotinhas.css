@@ -99,6 +99,12 @@ body
     flex-wrap: wrap;
 }
 
+#ao
+{
+    width: auto;
+    height: auto;
+}
+
 #ali
 {
     width: 300px;
@@ -113,4 +119,68 @@ body
     align-self: center;
 }
 
+.eu
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#aop
+{
+    width: 300px;
+    align-self: center;
+}
+
+.btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button
+{
+    background: none;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 20px;
+    transition: transform 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+button:hover
+{
+    transform: scale(1.2);
+    border: 1px solid gray;
+}
+
+/*celular*/
+@media (min-width: 320px) and (max-width: 500px)
+{
+    .pri
+    {
+        text-align: center;
+    }
+    .foto
+    {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .tu
+    {
+        gap: 20px;
+    }
+    .eu
+    {
+        gap: 20px;
+    }
+    #ao
+{
+    width: 300px;
+    height: 400px;
+}
+}
 
